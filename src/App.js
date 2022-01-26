@@ -8,13 +8,14 @@ import ChapterList from './components/chapterList/ChapterList'
 function App () {
   return (
     <div className='App'>
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/subjects' element={<Course />} />
           <Route path='/about' element={<About />} />
         </Routes>
-      </Router>
+      </Router> */}
+      <ChapterList/>
     </div>
   )
 }

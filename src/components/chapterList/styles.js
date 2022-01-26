@@ -45,11 +45,18 @@ const useStyles = makeStyles({
     paddingLeft: '2.5%',
     paddingRight: '2.5%',
     color: colors.blue,
+    border:0,
     backgroundColor: colors.yellow,
     borderColor: colors.blue,
-    boxShadow: '0px 4.51988px 12.4297px rgba(0, 0, 0, 0.15)',
+    opacity: '0.85',
 
-    fontSize: '28px'
+    fontSize: '28px',
+    fontWeight: 'normal',
+
+    '&:hover':{
+      boxShadow: '0px 4.51988px 12.4297px rgba(0, 0, 0, 0.15)',
+      fontWeight: '600',
+    },
   },
 
   subheading: {
