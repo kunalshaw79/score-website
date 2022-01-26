@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     lineHeight: '96px',
     fontFamily: 'Source Sans Pro',
 
-    width: '61%', //586px
+    width: '62%', //586px
     height: '5%px' //96px
   },
 
