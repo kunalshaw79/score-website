@@ -22,6 +22,10 @@ const ChapterList = () => {
 
       <div className={classes.chapters}>
         <div className={classes.chaptername}>1. Chapter Name</div>
+        {/* <div className={classes.learnbtn}>
+          {' '}
+          Learn <ArrowCircleRightIcon></ArrowCircleRightIcon>
+        </div> */}
       </div>
     </div>
   )

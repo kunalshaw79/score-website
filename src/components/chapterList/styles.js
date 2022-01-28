@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core'
-import { borderRadius, width } from '@mui/system'
 import { colors } from '../../styles/colors'
+
+// import {ArrowCircleRightIcon} from '@mui/icons-material/ArrowCircleRight'
 
 const useStyles = makeStyles({
   mainbox: {
@@ -14,25 +15,22 @@ const useStyles = makeStyles({
   },
 
   heading: {
-    fontSize: '36px',
-    lineHeight: '96px',
-    fontFamily: 'Source Sans Pro',
-
-    width: '62%', //586px
-    height: '5%px' //96px
+    fontSize: '2.25rem',
+    lineHeight: '6rem',
+    fontFamily: 'Source Sans Pro'
   },
 
   exams: {
-    width: '610px',
-    height: '71.16px'
+    width: '38.125rem',
+    height: '4.448rem'
   },
 
   subbox: {
     width: 'fit-content',
-    borderRadius: '32px',
+    borderRadius: '2rem',
     //display: 'flex',
     float: 'left',
-    marginRight: '20px', //43px
+    marginRight: '1.25rem',
 
     flexDirection: 'row',
     justifyContent: 'center',
@@ -45,60 +43,66 @@ const useStyles = makeStyles({
     paddingLeft: '2.5%',
     paddingRight: '2.5%',
     color: colors.blue,
-    border:0,
+    border: 0,
     backgroundColor: colors.yellow,
     borderColor: colors.blue,
     opacity: '0.85',
 
-    fontSize: '28px',
+    fontSize: '1.75rem',
     fontWeight: 'normal',
 
-    '&:hover':{
-      boxShadow: '0px 4.51988px 12.4297px rgba(0, 0, 0, 0.15)',
-      fontWeight: '600',
-    },
+    '&:hover': {
+      boxShadow: '0rem 0.282rem 0.777rem rgba(0, 0, 0, 0.15)',
+      fontWeight: '600'
+    }
+  },
+
+  learnbtn: {
+    float: 'right',
+    marginRight: '1.25rem',
+    fontSize: '1.75 rem',
+    fontWeight: 'normal',
+    color: colors.blue
   },
 
   subheading: {
     position: 'absolute',
-    width: '70%px', //586px
+    width: '70%', //586px
     height: '17%', //96px
 
     fontFamily: 'Source Sans Pro',
-    lineHeight: '96px',
-    fontSize: '36px'
+    lineHeight: '6rem',
+    fontSize: '2.25rem'
   },
 
   chapterName: {
     borderColor: colors.blue,
-    borderRadius: '20px',
+    borderRadius: '1.25rem',
     color: colors.blue,
-    fontSize: '23.41px',
+    fontSize: '1.463rem',
 
     position: 'absolute',
-    width: '1112px',
-    height: '101.45px',
-    left: '164px',
-    top: '393px'
+    width: '69.5rem',
+    height: '6.341rem',
+    left: '10.25rem',
+    top: '24.563rem'
   },
 
   chapters: {
     position: 'absolute',
     width: '77%',
-    height: '101.45px',
-    top: '315px', //393px
+    height: '6.341rem',
+    top: '19.688rem', //393px
 
-    border: '0.975439px solid #313576',
-    borderRadius: '20px'
-
-    // marginBottom: '40px'
+    border: '0.061rem solid #313576',
+    borderRadius: '1.25rem'
   },
 
   chaptername: {
     position: 'absolute',
     fontFamily: 'Roboto',
-    fontSize: '23.4105px',
-    lineHeight: '23px',
+    fontSize: '1.463rem',
+    lineHeight: '1.438rem',
     paddingLeft: '4%',
     paddingTop: '4%',
     justifyContent: 'center',
@@ -107,4 +111,3 @@ const useStyles = makeStyles({
 })
 
 export default useStyles
-
