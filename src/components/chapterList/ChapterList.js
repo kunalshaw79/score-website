@@ -11,9 +11,9 @@ const ChapterList = () => {
       </div>
 
       <div className={classes.exams}>
-        <button className={classes.subbox}>JEE Main</button>
-        <button className={classes.subbox}>JEE Advanced</button>
-        <button className={classes.subbox}>BOARDS</button>
+        <button className={classes.subjBtn}>JEE Main</button>
+        <button className={classes.subjBtn}>JEE Advanced</button>
+        <button className={classes.subjBtn}>BOARDS</button>
       </div>
 
       <div className={classes.subheading}>

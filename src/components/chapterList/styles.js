@@ -10,7 +10,6 @@ const useStyles = makeStyles({
     padding: '8%',
     paddingTop: '3%',
     color: colors.blue,
-    marginLeft: '15%',
     position: 'absolute'
   },
 
@@ -25,17 +24,15 @@ const useStyles = makeStyles({
     height: '4.448rem'
   },
 
-  subbox: {
+  subjBtn: {
     width: 'fit-content',
     borderRadius: '2rem',
-    //display: 'flex',
     float: 'left',
     marginRight: '1.25rem',
 
-    flexDirection: 'row',
+    // flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    // position: 'absolute',
     display: 'flex',
 
     paddingTop: '2%',
@@ -57,13 +54,13 @@ const useStyles = makeStyles({
     }
   },
 
-  learnbtn: {
-    float: 'right',
-    marginRight: '1.25rem',
-    fontSize: '1.75 rem',
-    fontWeight: 'normal',
-    color: colors.blue
-  },
+  // learnbtn: {
+  //   float: 'right',
+  //   marginRight: '1.25rem',
+  //   fontSize: '1.75 rem',
+  //   fontWeight: 'normal',
+  //   color: colors.blue
+  // },
 
   subheading: {
     position: 'absolute',
