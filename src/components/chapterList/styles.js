@@ -1,110 +1,119 @@
 import { makeStyles } from '@material-ui/core'
 import { colors } from '../../styles/colors'
 
-// import {ArrowCircleRightIcon} from '@mui/icons-material/ArrowCircleRight'
-
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   mainbox: {
-    width: '77%',
-    height: '80%',
-    padding: '8%',
-    paddingTop: '3%',
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    padding: '10%',
+    paddingBottom: '20rem',
     color: colors.blue,
-    position: 'absolute'
+    [theme.breakpoints.down('md')]: {
+      padding: '3rem'
+    }
   },
-
   heading: {
+    fontFamily: 'Source Sans Pro',
     fontSize: '2.25rem',
-    lineHeight: '6rem',
-    fontFamily: 'Source Sans Pro'
+    lineHeight: '2rem',
+    marginBottom: '3rem',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.5rem',
+      marginBottom: '2rem'
+    }
   },
-
-  exams: {
-    width: '38.125rem',
-    height: '4.448rem'
+  tabsCourse: {
+    '& .MuiTabs-indicator': {
+      display: 'none'
+    }
   },
-
-  subjBtn: {
+  tabs: {
+    display: 'flex',
+    [theme.breakpoints.down('xs')]: {
+      '& .MuiTabs-flexContainer': {
+        flexDirection: 'column',
+        alignItems: 'center'
+      }
+    }
+  },
+  tabButton: {
     width: 'fit-content',
     borderRadius: '2rem',
-    float: 'left',
     marginRight: '1.25rem',
-
-    // flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    display: 'flex',
-
-    paddingTop: '2%',
-    paddingBottom: '2%',
-    paddingLeft: '2.5%',
-    paddingRight: '2.5%',
     color: colors.blue,
     border: 0,
     backgroundColor: colors.yellow,
     borderColor: colors.blue,
     opacity: '0.85',
-
     fontSize: '1.75rem',
-    fontWeight: 'normal',
-
+    marginBottom: '3rem',
     '&:hover': {
       boxShadow: '0rem 0.282rem 0.777rem rgba(0, 0, 0, 0.15)',
-      fontWeight: '600'
+      fontWeight: '600',
+      cursor: 'pointer'
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.25rem',
+      marginBottom: '2rem'
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1rem',
+      marginRight: '0.8rem'
     }
   },
-
-  // learnbtn: {
-  //   float: 'right',
-  //   marginRight: '1.25rem',
-  //   fontSize: '1.75 rem',
-  //   fontWeight: 'normal',
-  //   color: colors.blue
-  // },
-
   subheading: {
-    position: 'absolute',
-    width: '70%', //586px
-    height: '17%', //96px
-
     fontFamily: 'Source Sans Pro',
-    lineHeight: '6rem',
-    fontSize: '2.25rem'
+    fontSize: '2rem',
+    lineHeight: '2rem',
+    marginBottom: '3rem',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.3rem',
+      marginBottom: '2rem'
+    }
   },
-
-  chapterName: {
-    borderColor: colors.blue,
+  chaptersList: {
+    width: '90%'
+  },
+  chapter: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     borderRadius: '1.25rem',
-    color: colors.blue,
-    fontSize: '1.463rem',
-
-    position: 'absolute',
-    width: '69.5rem',
-    height: '6.341rem',
-    left: '10.25rem',
-    top: '24.563rem'
-  },
-
-  chapters: {
-    position: 'absolute',
-    width: '77%',
-    height: '6.341rem',
-    top: '19.688rem', //393px
-
     border: '0.061rem solid #313576',
-    borderRadius: '1.25rem'
-  },
-
-  chaptername: {
-    position: 'absolute',
-    fontFamily: 'Roboto',
-    fontSize: '1.463rem',
+    padding: '1rem',
     lineHeight: '1.438rem',
-    paddingLeft: '4%',
-    paddingTop: '4%',
-    justifyContent: 'center',
-    color: colors.blue
+    color: colors.blue,
+    fontFamily: 'Roboto'
+  },
+  chapterName: {
+    fontSize: '1.3rem',
+    fontFamily: 'Roboto',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.125rem'
+    }
+  },
+  learnbtn: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginRight: '1.25rem',
+    fontSize: '1.3rem',
+    color: colors.blue,
+    cursor: 'pointer',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.125rem'
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginRight: '0.5rem'
+    }
+  },
+  learnIcon: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   }
-})
+}))
 
 export default useStyles
