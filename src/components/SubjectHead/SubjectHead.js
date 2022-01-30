@@ -1,31 +1,70 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import useStyles from './style.js'
 import { MenuItem, FormControl, Select } from '@material-ui/core'
 import PhysicsLogo from '../../assets/icons/PhysicsLogo.svg'
+import ChemistryLogo from '../../assets/icons/ChemistryLogo.svg'
+import MathsLogo from '../../assets/icons/MathsLogo.svg'
+import data from '../../data.js'
 
-export default function SubjectHead () {
+export default function SubjectHead ({ cls, sub, handleChangeSubject }) {
   const [subject, setSubject] = React.useState('')
+  const [details, setDetails] = useState()
 
   const handleChange = event => {
+    handleChangeSubject(event.target.value)
     setSubject(event.target.value)
   }
+
+  const renderLogoImage = sub => {
+    switch (sub) {
+      case 'physics':
+        return (
+          <img
+            className={classes.subjectHeadImage}
+            src={PhysicsLogo}
+            alt='Physics'
+          />
+        )
+      case 'chemistry':
+        return (
+          <img
+            className={classes.subjectHeadImage}
+            src={ChemistryLogo}
+            alt='Chemistry'
+          />
+        )
+      case 'maths':
+        return (
+          <img
+            className={classes.subjectHeadImage}
+            src={MathsLogo}
+            alt='Maths'
+          />
+        )
+    }
+  }
+
+  useEffect(() => {
+    let updatedData = data.filter(detail => {
+      return detail.class === cls
+    })
+    setDetails(updatedData[0])
+  }, [cls, sub])
 
   const classes = useStyles()
 
   return (
     <div className={classes.subjectHeadContainer}>
       <div className={classes.subjectHeadLeft}>
-        <p className={classes.subjectHeadClass}>11th Class</p>
-        <h1 className={classes.subjectHeadName}>Physics</h1>
-        <p className={classes.subjectHeadContent}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-          voluptatum exercitationem vel? Aspernatur eveniet ut repellat,
-          perspiciatis inventore, consequuntur, quis ea nemo commodi tenetur
-          voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Dolores voluptatum exercitationem vel? Aspernatur eveniet ut repellat,
-          perspiciatis inventore, consequuntur, quis ea nemo commodi tenetur
-          voluptates.
-        </p>
+        {details && (
+          <>
+            <p className={classes.subjectHeadClass}>{cls}th Class</p>
+            <h1 className={classes.subjectHeadName}>{sub}</h1>
+            <p className={classes.subjectHeadContent}>
+              {details[`${sub}`]['desc']}
+            </p>
+          </>
+        )}
       </div>
       <div className={classes.subjectHeadRight}>
         <div className={classes.subjectHeadRightTop}>
@@ -40,25 +79,17 @@ export default function SubjectHead () {
               value={subject}
               onChange={handleChange}
               displayEmpty
-              // inputProps={{ 'aria-label': 'Without label' }}
+              value={sub}
               className={classes.subjectHeadDropdownOption}
             >
-              {/* <MenuItem value=''>
-                <em>Subject</em>
-              </MenuItem> */}
-              <MenuItem value={1}>Physics</MenuItem>
-              <MenuItem value={2}>Chemistry</MenuItem>
-              <MenuItem value={3}>Maths</MenuItem>
-              <MenuItem value={4}>Biology</MenuItem>
+              <MenuItem value={'physics'}>Physics</MenuItem>
+              <MenuItem value={'chemistry'}>Chemistry</MenuItem>
+              <MenuItem value={'maths'}>Maths</MenuItem>
             </Select>
           </FormControl>
         </div>
         <div className={classes.subjectHeadRightbottom}>
-          <img
-            className={classes.subjectHeadImage}
-            src={PhysicsLogo}
-            alt='Physics'
-          />
+          {renderLogoImage(sub)}
         </div>
       </div>
     </div>

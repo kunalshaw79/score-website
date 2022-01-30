@@ -1,8 +1,9 @@
 import React from 'react'
+import BasicLayout from '../../layouts/BasicLayout.js'
 import useStyles from './styles.js'
 
 export default function About () {
   const classes = useStyles()
 
-  return <div>ABOUT PAGE</div>
+  return <BasicLayout>ABOUT PAGE</BasicLayout>
 }

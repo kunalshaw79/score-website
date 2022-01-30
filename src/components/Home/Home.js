@@ -5,6 +5,7 @@ import { colors } from '../../styles/colors'
 import enactusImg from '../../assets/images/enactus.png'
 import homeIcon from '../../assets/images/HomeIcon.png'
 import clsx from 'clsx'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const classes = useStyles()
@@ -25,14 +26,16 @@ const Home = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Button
-            className={`${classes.homeButton} ${classes.learnCase}`}
-            variant='contained'
-          >
-            <span className={classes.btnText} style={{ color: colors.blue }}>
-              Start Learning
-            </span>
-          </Button>
+          <Link to='/course' style={{ textDecoration: 'none' }}>
+            <Button
+              className={`${classes.homeButton} ${classes.learnCase}`}
+              variant='contained'
+            >
+              <span className={classes.btnText} style={{ color: colors.blue }}>
+                Start Learning
+              </span>
+            </Button>
+          </Link>
           {/*<Button className={`${classes.homeButton} ${classes.knowMoreCase}`} variant="contained"><span className={classes.btnText} style={{ color: '#FFFFFF' }}>Know More</span></Button>*/}
         </Grid>
         <Grid item xs={12} sm={6} md={4} className={classes.htag}>

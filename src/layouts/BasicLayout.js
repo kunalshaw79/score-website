@@ -1,15 +1,14 @@
 import { Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import Footer from '../components/Footer/Footer'
 
 const useStyles = makeStyles({
   layoutContainer: {
     position: 'relative',
-    // height: '100vh',
-    width: '100vw'
+    width: '100%'
   },
   childContainer: {
     minHeight: '90vh',
-    backgroundColor: colors.ns2,
     overflowX: 'hidden'
   }
 })
@@ -21,7 +20,7 @@ export default function BasicLayout ({ children }) {
     <div className={styles.layoutContainer}>
       <Grid container>
         <Grid item xs={12}>
-          <Navbar />
+          {/* <Navbar /> */}
         </Grid>
         <Grid className={styles.childContainer} item xs={12}>
           {children}

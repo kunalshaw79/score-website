@@ -38,6 +38,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   subjectHeadName: {
+    textTransform: 'capitalize',
     marginTop: '2%',
     fontFamily: 'Source Sans Pro',
     fontStyle: 'normal',
@@ -130,7 +131,9 @@ const useStyles = makeStyles(theme => ({
       display: 'none'
     }
   },
-  subjectHeadImage: {}
+  subjectHeadImage: {
+    width: '15vw'
+  }
 }))
 
 export default useStyles
