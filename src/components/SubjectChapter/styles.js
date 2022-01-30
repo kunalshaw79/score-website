@@ -93,7 +93,7 @@ const useStyles=makeStyles(theme=>({
             borderRadius:'1vw 1vw 0 0'
           },
           [theme.breakpoints.up('lg')]:{
-            minHeight:'55vh'
+            minHeight:'40vh'
           },
       },
       contentHead:{
@@ -112,6 +112,7 @@ const useStyles=makeStyles(theme=>({
           fontWeight:'400',
           color:colors.white,
           fontSize:'1.5rem',
+          textTransform:'none',
           padding:'1rem',
           cursor:'pointer',
           display:'flex',
@@ -120,7 +121,7 @@ const useStyles=makeStyles(theme=>({
               borderRadius:'1vw'
           },
           [theme.breakpoints.down('xs')]:{
-            flexDirection:'column',
+           flexDirection:'column'
         },
       }, 
       icon:{
