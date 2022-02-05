@@ -9,13 +9,14 @@ const useStyles=makeStyles(theme=>({
         "@media (max-width: 900px)": {
           paddingLeft: 0,
         },
+        boxSizing:'border-box'
       },
       logo: {
-        width:'10%',
+        maxWidth:'11.5vw',
         textAlign: "left",
         paddingBottom:'1%',
         "@media (max-width: 900px)": {
-            width:'45%'
+            maxWidth:'25vw',
           },
       },
       menuButton: {
@@ -34,7 +35,11 @@ const useStyles=makeStyles(theme=>({
       },
       dropDownContainer: {
         padding: "2rem 1.5rem",
+        borderTop:'1px solid white'
       },
+      drawerPaper:{
+        backgroundColor:colors.blue
+      }
 }))
 
 export default useStyles;

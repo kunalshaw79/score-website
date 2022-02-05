@@ -4,6 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import useStyles from './styles';
 import logo from '../../assets/images/enactusLogo.png';
+import { colors } from '../../styles/colors'
 
 const headersData = [
     {
@@ -65,7 +66,7 @@ const headersData = [
                 onClick: handleDropDownOpen,
               }}
             >
-              <MenuIcon />
+              <MenuIcon style={{fontSize:'2rem'}}/>
             </IconButton>
     
             <Drawer
@@ -73,6 +74,10 @@ const headersData = [
                 anchor: "left",
                 open: dropDown,
                 onClose: handleDropDownClose,
+                style:{backdropFilter:'blur(5px)'}
+              }}
+              classes={{
+                paper: classes.drawerPaper
               }}
             >
               <div className={classes.dropDownContainer}>{getDropdownChoices()}</div>
@@ -90,9 +95,8 @@ const headersData = [
               {...{
                 component: RouterLink,
                 to: href,
-                color: "inherit",
                 key: label,
-                style:{textDecoration:'none'},
+                style:{textDecoration:'none',color:colors.white,'&:hover':{color:colors.yellow},fontFamily:'Roboto'},
               }}
             >
               <MenuItem>{label}</MenuItem>
@@ -125,11 +129,11 @@ const headersData = [
       };
 
     return(
-    <header>
-      <AppBar className={classes.header}>
+      <header>
+      <AppBar elevation={0} className={classes.header} position='sticky'>
         {mobileView ? MobileView() : DesktopView()}
       </AppBar>
-    </header>
+      </header>
     )
 }
 
