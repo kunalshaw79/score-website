@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/score-website/static/css/main.bf0028a0.css",
-    "main.js": "/score-website/static/js/main.57557eb5.js",
+    "main.js": "/score-website/static/js/main.b0f47ec4.js",
     "static/media/enactus.png": "/score-website/static/media/enactus.62bbb7953ec3f5e412cd.png",
     "static/media/homeBackground.png": "/score-website/static/media/homeBackground.db374589b7cf29a9299c.png",
     "static/media/HomeIcon.png": "/score-website/static/media/HomeIcon.86343f1886758d7a267c.png",
@@ -17,10 +17,10 @@
     "static/media/VideoLecture.svg": "/score-website/static/media/VideoLecture.d5125e65d46a451b6ec05d0922d901a4.svg",
     "static/media/MathsLogo.svg": "/score-website/static/media/MathsLogo.c0b1d1a6338d41c79f59797078d655f1.svg",
     "main.bf0028a0.css.map": "/score-website/static/css/main.bf0028a0.css.map",
-    "main.57557eb5.js.map": "/score-website/static/js/main.57557eb5.js.map"
+    "main.b0f47ec4.js.map": "/score-website/static/js/main.b0f47ec4.js.map"
   },
   "entrypoints": [
     "static/css/main.bf0028a0.css",
-    "static/js/main.57557eb5.js"
+    "static/js/main.b0f47ec4.js"
   ]
 }
