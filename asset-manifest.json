@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/score-website/static/css/main.bf0028a0.css",
+    "main.js": "/score-website/static/js/main.57557eb5.js",
+    "static/media/enactus.png": "/score-website/static/media/enactus.62bbb7953ec3f5e412cd.png",
+    "static/media/homeBackground.png": "/score-website/static/media/homeBackground.db374589b7cf29a9299c.png",
+    "static/media/HomeIcon.png": "/score-website/static/media/HomeIcon.86343f1886758d7a267c.png",
+    "static/media/PhysicsIcon.svg": "/score-website/static/media/PhysicsIcon.a7877658a6d350e4fe0efcc948f1be4a.svg",
+    "static/media/ChemistryIcon.svg": "/score-website/static/media/ChemistryIcon.bbec60d53eb95062b93d61a47f6ee688.svg",
+    "static/media/MathsIcon.svg": "/score-website/static/media/MathsIcon.096028a4bba96d22774ca2835064b56d.svg",
+    "static/media/PracticeQuestion.svg": "/score-website/static/media/PracticeQuestion.10a9f792ab90d54c25bb7f74649eb184.svg",
+    "static/media/PhysicsLogo.svg": "/score-website/static/media/PhysicsLogo.bbe84d792bb0dc69dbe8fe20d00df594.svg",
+    "static/media/ChemistryLogo.svg": "/score-website/static/media/ChemistryLogo.3b605e7fdb5cd809de7800ca2778680c.svg",
+    "static/media/StudyMaterial.svg": "/score-website/static/media/StudyMaterial.93f74508f07588eabde3542ff1b58250.svg",
+    "static/media/PrevYearQues.svg": "/score-website/static/media/PrevYearQues.d6eb7682172ced9341b7d203222ed94a.svg",
+    "index.html": "/score-website/index.html",
+    "static/media/VideoLecture.svg": "/score-website/static/media/VideoLecture.d5125e65d46a451b6ec05d0922d901a4.svg",
+    "static/media/MathsLogo.svg": "/score-website/static/media/MathsLogo.c0b1d1a6338d41c79f59797078d655f1.svg",
+    "main.bf0028a0.css.map": "/score-website/static/css/main.bf0028a0.css.map",
+    "main.57557eb5.js.map": "/score-website/static/js/main.57557eb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf0028a0.css",
+    "static/js/main.57557eb5.js"
+  ]
+}
