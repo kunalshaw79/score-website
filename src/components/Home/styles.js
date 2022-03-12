@@ -5,7 +5,7 @@ import BlueBgImage from '../../assets/images/homeBackground.png' // Import using
 const useStyles = makeStyles(theme => ({
   scoreHome: {
     width: '100%',
-    marginTop: '-1%',
+    marginTop: '-5%',
     backgroundImage: `url(${BlueBgImage})`,
     flexDirection: 'row',
     backgroundSize: '100% 100%',
@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   scorePage: {
-    marginTop: '5%',
+    marginTop: '6%',
     marginLeft: '7%',
     [theme.breakpoints.down('xs')]: {
       textAlign: 'center',
